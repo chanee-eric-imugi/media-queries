@@ -99,11 +99,6 @@ footer {
         background-color: white;
     }
 
-    .header-img img{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
     .main {
         width: calc(60% - 1em);
         margin: 1em 0;
