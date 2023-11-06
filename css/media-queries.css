@@ -1,82 +1,108 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
 body {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    align-items: center;
     font-family: sans-serif;
+    margin: 1em;
 }
-.alert-info{
-    background: #ccffff;
-    border: 2px solid grey;
+
+.alert-info {
+    border: 1px solid grey;
+    padding: 1em;
+    width: 100%;
     text-align: center;
+    background-color: lightblue;
     letter-spacing: 0.1em;
 }
 
-.alert-info>a {
-    display: inline-block;
-    padding: 1em 0;
-    text-decoration: none ;
+.alert-info a {
+    text-decoration: none;
+    color: black;
 }
+
 h1 {
-    text-align: center;
+    margin: 0.5em;
 }
 
 nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+    width: 100%;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
 li {
-    margin: 1em;
-    padding: 1em 0;
-    background-color: lightgray;
-}
-
-.nav-links a {
-    margin: 40px;
-    /*background: grey;*/
-    /*border: 2px solid grey;*/
-    /*list-style: none;*/
-    /*padding: 1em 0;*/
-    /*display: inline-block;*/
-}
-/*li{*/
-/*    display: inline-block;*/
-/*    background: lightgray;*/
-/*    flex-wrap: wrap;*/
-/*    padding: 1em 0;*/
-/*}*/
-
-/*.nav-links {*/
-/*    display: flex;*/
-/*    list-style: none;*/
-/*    padding: 1em 0;*/
-/*}*/
-
-
-
-
-/*section {
-    width: 100%;
+    margin: 1em 0;
+    background-color: lightgrey;
     padding: 1em;
-}*/
+    text-align: center;
+}
 
-/*@media screen and (min-width: 800px) {
-    body {
-        background: rgba(5, 77, 5, 0.91);
-    }
-    section {
-        width: 50%;
-    }
-}*/
-.sub-section{
+.header-img img {
+    width: 100%;
+}
+
+h2 {
+    margin: 1em 0 0.5em 0;
+}
+
+section > p {
+    margin-bottom: 2em;
+}
+
+.sub-section {
     font-style: italic;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5em;
+    width: 100%;
+}
+
+.icons {
+    width: 1.5em;
+    margin: 0em 0.25em;
+}
+
+/* ---  */
+
+@media screen and (min-width: 890px) {
+    body {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    nav {
+        width: auto;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    li {
+        background-color: white;
+    }
+
+    .main {
+        width: calc(60% - 1em);
+        margin: 1em 0;
+    }
+
+    .sub-section {
+        width: calc(40% - 1em);
+        margin: 1em 0;
+    }
+
 }
