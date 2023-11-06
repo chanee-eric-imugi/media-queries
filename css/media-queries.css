@@ -83,7 +83,7 @@ footer {
         align-items: flex-start;
     }
 
-    .alert-info{
+    .alert-info {
         display: none;
     }
 
@@ -99,6 +99,11 @@ footer {
         background-color: white;
     }
 
+    .header-img {
+        flex-basis: 100%;
+        height: auto;
+    }
+
     .main {
         width: calc(60% - 1em);
         margin: 1em 0;
@@ -108,5 +113,4 @@ footer {
         width: calc(40% - 1em);
         margin: 1em 0;
     }
-
 }
