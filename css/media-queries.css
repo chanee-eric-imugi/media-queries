@@ -83,6 +83,10 @@ footer {
         align-items: flex-start;
     }
 
+    .alert-info{
+        display: none;
+    }
+
     nav {
         width: auto;
     }
@@ -93,6 +97,11 @@ footer {
 
     li {
         background-color: white;
+    }
+
+    .header-img img{
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .main {
